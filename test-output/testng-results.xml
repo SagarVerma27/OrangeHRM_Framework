@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[DB open]]>
+    </line>
+    <line>
+      <![CDATA[Browser launched successfully]]>
+    </line>
+    <line>
+      <![CDATA[Logged into OrangeHRM]]>
+    </line>
+    <line>
+      <![CDATA[Employee added successfully]]>
+    </line>
+    <line>
+      <![CDATA[Logged out successfully]]>
+    </line>
+    <line>
+      <![CDATA[close browser]]>
+    </line>
+    <line>
+      <![CDATA[DB close]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-07-30T18:01:32 IST" name="Default suite" finished-at="2026-07-30T18:03:29 IST" duration-ms="116443">
+    <groups>
+    </groups>
+    <test started-at="2026-07-30T18:01:32 IST" name="Default test" finished-at="2026-07-30T18:03:29 IST" duration-ms="116443">
+      <class name="test_scripts.AddEmployeeTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:test_scripts.AddEmployeeTest@bcec361]" started-at="2026-07-30T18:01:32 IST" name="beforeSuite" finished-at="2026-07-30T18:01:32 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[DB open]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test_scripts.AddEmployeeTest@bcec361]" started-at="2026-07-30T18:01:32 IST" name="launchBrowser" finished-at="2026-07-30T18:01:34 IST" duration-ms="2034" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser launched successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:test_scripts.AddEmployeeTest@bcec361]" started-at="2026-07-30T18:01:34 IST" name="login" finished-at="2026-07-30T18:01:58 IST" duration-ms="23966" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logged into OrangeHRM]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="addEmployeeTest()[pri:0, instance:test_scripts.AddEmployeeTest@bcec361]" started-at="2026-07-30T18:01:58 IST" name="addEmployeeTest" finished-at="2026-07-30T18:03:25 IST" duration-ms="86883" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Employee added successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:test_scripts.AddEmployeeTest@bcec361]" started-at="2026-07-30T18:03:25 IST" name="logout" finished-at="2026-07-30T18:03:28 IST" duration-ms="2546" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logged out successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test_scripts.AddEmployeeTest@bcec361]" started-at="2026-07-30T18:03:28 IST" name="closeBrowser" finished-at="2026-07-30T18:03:29 IST" duration-ms="951" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[close browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test_scripts.AddEmployeeTest@bcec361]" started-at="2026-07-30T18:03:29 IST" name="afterSuite" finished-at="2026-07-30T18:03:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[DB close]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- test_scripts.AddEmployeeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
