@@ -4,7 +4,9 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -42,9 +44,26 @@ public class BaseClass
 		String browser = putil.toReadDataFromPropFile("BROWSER");
 		switch(browser.toLowerCase())
 		{
-		case "edge" : driver= new EdgeDriver(); break;
+		case "edge" :{ EdgeOptions options = new EdgeOptions();
+                       options.addArguments("--headless=new");
+                       options.addArguments("--disable-gpu");
+                       options.addArguments("--window-size=1920,1080");
+                       options.addArguments("--no-sandbox");
+                       options.addArguments("--disable-dev-shm-usage");
+                       driver = new EdgeDriver(options);
+                      } break;
+  
 		case "firefox" : driver= new FirefoxDriver(); break;
-		case "chrome" : driver= new ChromeDriver(); break;
+		
+		case "chrome":{ ChromeOptions options = new ChromeOptions();
+                        options.addArguments("--headless=new");
+                        options.addArguments("--disable-gpu");
+                        options.addArguments("--window-size=1920,1080");
+                        options.addArguments("--no-sandbox");
+                        options.addArguments("--disable-dev-shm-usage");
+                        driver = new ChromeDriver(options); 
+		               } break;
+             
 		default : throw new IllegalArgumentException("Invalid Browser");
 		}
 		
