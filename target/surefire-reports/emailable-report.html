@@ -9,10 +9,35 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">AddEmpTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">114,896</td><td></td><td></td></tr>
+<tr><td><a href="#t0">AddEmpTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">91,997</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AddEmpTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test_scripts.AddEmployeeTest</td><td><a href="#m0">addEmployeeTest</a></td><td rowspan="1">1785482622843</td><td rowspan="1">87217</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AddEmpTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test_scripts.AddEmployeeTest</td><td><a href="#m0">addEmployeeTest</a></td><td rowspan="1">1785738597425</td><td rowspan="1">17171</td></tr></tbody>
 </table>
-<h2>AddEmpTest</h2><h3 id="m0">test_scripts.AddEmployeeTest#addEmployeeTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Employee added successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>AddEmpTest</h2><h3 id="m0">test_scripts.AddEmployeeTest#addEmployeeTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=151.0.4129.59)
+Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [eb84db6dee05c4f4af6733607288f3e9, clickElement {id=f.02564EAAA51514348C8DB57E75DC7948.d.1EAC23BC373468E178AA665DB6BD3687.e.27}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 151.0.4129.59, fedcm:accounts: true, goog:processID: 12084, ms:edgeOptions: {debuggerAddress: localhost:59836}, msedge: {msedgedriverVersion: 151.0.4129.59 (400e1a29bee5..., userDataDir: C:\Users\91995\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59836/devtoo..., se:cdpVersion: 151.0.4129.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (eb84db6dee05c4f4af6733607288f3e9)] -&gt; xpath: //span[text()=&apos;PIM&apos;]]
+Session ID: eb84db6dee05c4f4af6733607288f3e9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at objectrepository.DashboardPage.navigateToModule(DashboardPage.java:36)
+	at test_scripts.AddEmployeeTest.addEmployeeTest(AddEmployeeTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
