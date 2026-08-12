@@ -61,7 +61,7 @@ src
 
 ## Tools Used
 
-- IntelliJ IDEA / Eclipse
+- Eclipse
 - Selenium 4
 - TestNG
 - Maven
